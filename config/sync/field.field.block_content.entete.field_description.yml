@@ -1,0 +1,21 @@
+uuid: ff107b86-1588-4ce4-a0b3-3e60a976d271
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+    - field.storage.block_content.field_description
+  module:
+    - text
+id: block_content.entete.field_description
+field_name: field_description
+entity_type: block_content
+bundle: entete
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

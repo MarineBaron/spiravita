@@ -1,0 +1,9 @@
+uuid: 1b45e0af-dfbe-4c5b-b06d-c92462e2973b
+langcode: fr
+status: true
+dependencies: {  }
+name: Activités
+vid: activites
+description: ''
+hierarchy: 0
+weight: 0

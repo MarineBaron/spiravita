@@ -1,0 +1,29 @@
+uuid: 7fa2e73b-e8d2-444f-8566-09f066ead6d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jour
+    - paragraphs.paragraphs_type.horaire_hebdo
+    - taxonomy.vocabulary.jour
+id: paragraph.horaire_hebdo.field_jour
+field_name: field_jour
+entity_type: paragraph
+bundle: horaire_hebdo
+label: Jour
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      jour: jour
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

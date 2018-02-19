@@ -1,0 +1,29 @@
+uuid: a18801e8-904f-4643-8ddc-ff0cc2a6013c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_public
+    - node.type.cours
+    - taxonomy.vocabulary.public
+id: node.cours.field_public
+field_name: field_public
+entity_type: node
+bundle: cours
+label: Public
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      public: public
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 397bd313-31b4-4bcd-8dae-f6dc798a7b50
+langcode: fr
+status: true
+dependencies: {  }
+id: heure_courte
+label: 'Heure Courte'
+locked: false
+pattern: 'h:i'

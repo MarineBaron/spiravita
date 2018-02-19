@@ -1,0 +1,21 @@
+uuid: 72b364dd-3b8e-4173-b644-6e47fdd48086
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_prenom
+field_name: field_prenom
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,38 @@
+uuid: 7018b7c4-671d-4dcc-8ee7-16e1ee195b75
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.intervenant
+  module:
+    - image
+id: node.intervenant.field_image
+field_name: field_image
+entity_type: node
+bundle: intervenant
+label: Photo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/intervenant
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

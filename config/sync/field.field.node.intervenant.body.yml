@@ -1,0 +1,22 @@
+uuid: 7430a723-87e1-4ef9-bc4e-381a58e4ac42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.intervenant
+  module:
+    - text
+id: node.intervenant.body
+field_name: body
+entity_type: node
+bundle: intervenant
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

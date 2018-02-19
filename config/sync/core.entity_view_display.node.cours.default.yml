@@ -1,0 +1,87 @@
+uuid: a0687890-d291-4bd4-9f55-3f7dd497bb42
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.cours.body
+    - field.field.node.cours.field_activite
+    - field.field.node.cours.field_horaire_hebdo
+    - field.field.node.cours.field_image
+    - field.field.node.cours.field_intervenant
+    - field.field.node.cours.field_public
+    - field.field.node.cours.field_reservation
+    - image.style.large
+    - node.type.cours
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+    - user
+id: node.cours.default
+targetEntityType: node
+bundle: cours
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_activite:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_horaire_hebdo:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 5
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_intervenant:
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_public:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_reservation:
+    weight: 4
+    label: visually_hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  langcode: true
+  links: true

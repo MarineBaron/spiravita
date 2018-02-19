@@ -1,0 +1,26 @@
+uuid: 43a828b7-6009-4036-bb17-1f8c4827b1a4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_horaire
+    - paragraphs.paragraphs_type.horaire_hebdo
+  module:
+    - datetime_range
+id: paragraph.horaire_hebdo.field_horaire
+field_name: field_horaire
+entity_type: paragraph
+bundle: horaire_hebdo
+label: Horaire
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
+default_value_callback: ''
+settings: {  }
+field_type: daterange

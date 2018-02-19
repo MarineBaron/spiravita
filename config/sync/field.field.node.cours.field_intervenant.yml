@@ -1,0 +1,29 @@
+uuid: ab1a7604-fd40-4e9e-af5e-0e3eb998992d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intervenant
+    - node.type.cours
+    - node.type.intervenant
+id: node.cours.field_intervenant
+field_name: field_intervenant
+entity_type: node
+bundle: cours
+label: Intervenant
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      intervenant: intervenant
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

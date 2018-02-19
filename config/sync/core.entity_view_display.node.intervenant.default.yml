@@ -1,0 +1,75 @@
+uuid: 1fe3177d-6b39-4b33-bacc-c9372ba24139
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.intervenant.body
+    - field.field.node.intervenant.field_coordonnees
+    - field.field.node.intervenant.field_fonction
+    - field.field.node.intervenant.field_image
+    - field.field.node.intervenant.field_nom
+    - field.field.node.intervenant.field_prenom
+    - node.type.intervenant
+    - responsive_image.styles.narrow
+  module:
+    - entity_reference_revisions
+    - responsive_image
+    - text
+    - user
+id: node.intervenant.default
+targetEntityType: node
+bundle: intervenant
+mode: default
+content:
+  body:
+    weight: 5
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_coordonnees:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_fonction:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image:
+    weight: 4
+    label: visually_hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_nom:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_prenom:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,34 @@
+uuid: 48bcf925-7395-434a-a830-9b2e7f73a9f7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coordonnees
+    - node.type.intervenant
+    - paragraphs.paragraphs_type.coordonnees
+  module:
+    - entity_reference_revisions
+id: node.intervenant.field_coordonnees
+field_name: field_coordonnees
+entity_type: node
+bundle: intervenant
+label: Coordonnées
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      coordonnees: coordonnees
+    target_bundles_drag_drop:
+      coordonnees:
+        enabled: true
+        weight: 3
+      titre_texte:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

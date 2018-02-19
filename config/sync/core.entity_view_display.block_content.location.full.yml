@@ -1,0 +1,38 @@
+uuid: d81fd260-6c0e-4216-9cf8-cfc58a8999de
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.location.body
+    - field.field.block_content.location.field_image
+    - field.field.block_content.location.field_info
+    - responsive_image.styles.narrow
+  module:
+    - responsive_image
+    - text
+id: block_content.location.full
+targetEntityType: block_content
+bundle: location
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  field_info: true
+  langcode: true

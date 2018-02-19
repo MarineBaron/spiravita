@@ -1,0 +1,8 @@
+uuid: 7022851b-becd-4ed8-930c-97fbc08b7eb6
+langcode: fr
+status: true
+dependencies: {  }
+id: location
+label: Location
+revision: 0
+description: 'Ce bloc affiche les informations concernant la location de l''espace. '

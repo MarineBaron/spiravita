@@ -1,0 +1,23 @@
+uuid: e86ed9e9-5d18-4b25-8e11-59f7799cbc1c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_site_web
+    - paragraphs.paragraphs_type.coordonnees
+  module:
+    - link
+id: paragraph.coordonnees.field_site_web
+field_name: field_site_web
+entity_type: paragraph
+bundle: coordonnees
+label: 'Site Web'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

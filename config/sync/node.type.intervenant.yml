@@ -1,0 +1,17 @@
+uuid: 74fd6ade-9049-49a1-acaa-fbe5097630c0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Intervenant
+type: intervenant
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

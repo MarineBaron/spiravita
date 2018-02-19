@@ -1,0 +1,24 @@
+uuid: 9cf51287-fb20-43de-8bd4-33111dfd9530
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.atelier
+  module:
+    - datetime
+id: node.atelier.field_dates
+field_name: field_dates
+entity_type: node
+bundle: atelier
+label: Dates
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

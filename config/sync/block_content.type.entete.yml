@@ -1,0 +1,8 @@
+uuid: e27ea6cc-5c99-4498-851b-a3a25fbb3cb1
+langcode: fr
+status: true
+dependencies: {  }
+id: entete
+label: Entete
+revision: 0
+description: 'Bloc contenant l''entête de la page d''accueil'

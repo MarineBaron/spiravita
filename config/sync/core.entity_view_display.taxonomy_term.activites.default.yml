@@ -1,0 +1,22 @@
+uuid: 179577c3-6bee-465f-b5b9-7260dc2357d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.activites
+  module:
+    - text
+id: taxonomy_term.activites.default
+targetEntityType: taxonomy_term
+bundle: activites
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

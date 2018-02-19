@@ -1,0 +1,11 @@
+uuid: c148428c-fdf6-4a42-9eda-3386d05a3cc8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.intervenant
+id: node.intervenant
+target_entity_type_id: node
+target_bundle: intervenant
+default_langcode: site_default
+language_alterable: false

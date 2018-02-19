@@ -1,0 +1,53 @@
+uuid: b6d07283-cc24-4435-a4ea-55a7675bd9d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.intervenant.body
+    - field.field.node.intervenant.field_coordonnees
+    - field.field.node.intervenant.field_fonction
+    - field.field.node.intervenant.field_image
+    - field.field.node.intervenant.field_nom
+    - field.field.node.intervenant.field_prenom
+    - node.type.intervenant
+    - responsive_image.styles.narrow
+  module:
+    - responsive_image
+    - user
+id: node.intervenant.teaser
+targetEntityType: node
+bundle: intervenant
+mode: teaser
+content:
+  field_fonction:
+    type: string
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_image:
+    type: responsive_image
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: content
+    third_party_settings: {  }
+  field_prenom:
+    type: string
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_coordonnees: true
+  field_nom: true
+  langcode: true
+  links: true

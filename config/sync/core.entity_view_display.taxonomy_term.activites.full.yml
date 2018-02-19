@@ -1,0 +1,23 @@
+uuid: 104f47ec-d102-46d3-9951-352b241b92e1
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - taxonomy.vocabulary.activites
+  module:
+    - text
+id: taxonomy_term.activites.full
+targetEntityType: taxonomy_term
+bundle: activites
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

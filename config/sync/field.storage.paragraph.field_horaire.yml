@@ -1,0 +1,20 @@
+uuid: 7580abc1-7d16-48e9-9128-acd8480dd735
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - paragraphs
+id: paragraph.field_horaire
+field_name: field_horaire
+entity_type: paragraph
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

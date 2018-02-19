@@ -1,0 +1,30 @@
+uuid: 413f7be6-cf14-435a-bda1-0793eb1b0090
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.activites
+  module:
+    - system
+    - views
+  theme:
+    - spiravita
+id: block_activites
+theme: spiravita
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:activites-block_1'
+settings:
+  id: 'views_block:activites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

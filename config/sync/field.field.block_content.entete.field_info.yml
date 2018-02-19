@@ -1,0 +1,37 @@
+uuid: 5abc20b9-1d7e-4251-abe3-d33c0b6adbea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+    - field.storage.block_content.field_info
+    - paragraphs.paragraphs_type.titre_texte
+  module:
+    - entity_reference_revisions
+id: block_content.entete.field_info
+field_name: field_info
+entity_type: block_content
+bundle: entete
+label: Info
+description: 'Informations apparaissant sur l''image d''entete'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      titre_texte: titre_texte
+    target_bundles_drag_drop:
+      titre_texte:
+        enabled: true
+        weight: 2
+      coordonnees:
+        weight: 4
+        enabled: false
+      horaire_hebdo:
+        weight: 5
+        enabled: false
+field_type: entity_reference_revisions

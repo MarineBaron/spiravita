@@ -1,0 +1,39 @@
+uuid: c25d233a-ca4e-4c1a-a34f-cf862a1bcd7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.field.block_content.location.body
+    - field.field.block_content.location.field_image
+    - field.field.block_content.location.field_info
+    - responsive_image.styles.narrow
+  module:
+    - entity_reference_revisions
+    - responsive_image
+id: block_content.location.default
+targetEntityType: block_content
+bundle: location
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: visually_hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  field_info:
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  body: true
+  langcode: true

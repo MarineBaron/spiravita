@@ -1,0 +1,23 @@
+uuid: 7169f150-1680-4f85-b002-2f5b017bd01c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reservation
+    - node.type.cours
+id: node.cours.field_reservation
+field_name: field_reservation
+entity_type: node
+bundle: cours
+label: Réservation
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: oui
+  off_label: non
+field_type: boolean

@@ -1,0 +1,38 @@
+uuid: 759ec61d-6bab-48cf-96fb-4f5590b4f9eb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+    - field.storage.block_content.field_logo
+  module:
+    - image
+id: block_content.entete.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: entete
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/logo
+  file_extensions: png
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: e2fd20eb-49f5-4e36-98b4-0272e354dc19
+    alt: ''
+    title: ''
+    width: 1577
+    height: 489
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,22 @@
+uuid: 1749df7d-f24c-4405-8a67-324a3ec3ee00
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.atelier
+  module:
+    - text
+id: node.atelier.body
+field_name: body
+entity_type: node
+bundle: atelier
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

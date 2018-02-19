@@ -1,0 +1,29 @@
+uuid: 6d0b2982-5f4b-4d2a-9eed-2090b1f9d38a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activite
+    - node.type.cours
+    - taxonomy.vocabulary.activites
+id: node.cours.field_activite
+field_name: field_activite
+entity_type: node
+bundle: cours
+label: Activité
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activites: activites
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

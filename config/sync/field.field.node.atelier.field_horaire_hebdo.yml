@@ -1,0 +1,37 @@
+uuid: 70973854-747c-4010-a052-33b01443e09c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horaire_hebdo
+    - node.type.atelier
+    - paragraphs.paragraphs_type.horaire_hebdo
+  module:
+    - entity_reference_revisions
+id: node.atelier.field_horaire_hebdo
+field_name: field_horaire_hebdo
+entity_type: node
+bundle: atelier
+label: 'Horaire Hebdo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      horaire_hebdo: horaire_hebdo
+    target_bundles_drag_drop:
+      coordonnees:
+        weight: 4
+        enabled: false
+      horaire_hebdo:
+        enabled: true
+        weight: 5
+      titre_texte:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

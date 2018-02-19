@@ -1,0 +1,9 @@
+uuid: d2772fbb-f9a4-4795-b8dd-b152606ce3de
+langcode: fr
+status: true
+dependencies: {  }
+id: coordonnees
+label: Coordonnées
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

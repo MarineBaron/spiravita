@@ -1,0 +1,29 @@
+uuid: 1665ad56-43e8-44db-a81e-a0cf7ffd2813
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intervenant
+    - node.type.atelier
+    - node.type.intervenant
+id: node.atelier.field_intervenant
+field_name: field_intervenant
+entity_type: node
+bundle: atelier
+label: Intervenant
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      intervenant: intervenant
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

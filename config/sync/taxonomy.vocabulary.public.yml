@@ -1,0 +1,9 @@
+uuid: 35f64b20-a78e-4715-8a0a-c37586219fe1
+langcode: fr
+status: true
+dependencies: {  }
+name: Public
+vid: public
+description: 'contient les termes définissant le public attendu pour un cours ou une activité'
+hierarchy: 0
+weight: 0

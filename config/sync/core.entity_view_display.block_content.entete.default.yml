@@ -1,0 +1,55 @@
+uuid: cedc4438-f123-4c7f-9042-a62177627788
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+    - field.field.block_content.entete.field_description
+    - field.field.block_content.entete.field_image
+    - field.field.block_content.entete.field_info
+    - field.field.block_content.entete.field_logo
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+id: block_content.entete.default
+targetEntityType: block_content
+bundle: entete
+mode: default
+content:
+  field_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_info:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_logo:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 5839c77c-597e-4df1-b084-30883bf346eb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.jour
+id: taxonomy_term.jour
+target_entity_type_id: taxonomy_term
+target_bundle: jour
+default_langcode: site_default
+language_alterable: false

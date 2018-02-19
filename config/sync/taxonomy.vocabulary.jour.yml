@@ -1,0 +1,9 @@
+uuid: 47d4edd5-dfca-4086-bce2-f7a46e065c41
+langcode: fr
+status: true
+dependencies: {  }
+name: Jour
+vid: jour
+description: ''
+hierarchy: 0
+weight: 0

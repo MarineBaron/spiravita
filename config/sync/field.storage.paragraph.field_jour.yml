@@ -1,0 +1,20 @@
+uuid: efa67464-85be-47e6-b320-ef5b713979ad
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_jour
+field_name: field_jour
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 7
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

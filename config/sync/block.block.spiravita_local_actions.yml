@@ -1,0 +1,20 @@
+uuid: 2389b57f-fc7a-46f6-9a41-5ff7f0c78dde
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - spiravita
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: spiravita_local_actions
+theme: spiravita
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

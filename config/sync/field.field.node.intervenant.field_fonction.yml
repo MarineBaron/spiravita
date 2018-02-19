@@ -1,0 +1,19 @@
+uuid: c2b116a4-0b22-43ad-a607-8835a45c283a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fonction
+    - node.type.intervenant
+id: node.intervenant.field_fonction
+field_name: field_fonction
+entity_type: node
+bundle: intervenant
+label: Fonction
+description: 'Fonction principale de l''intervenant'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

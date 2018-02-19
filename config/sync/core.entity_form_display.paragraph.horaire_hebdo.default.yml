@@ -1,0 +1,31 @@
+uuid: b93e38b0-5d9e-4a5e-b47a-cdc714f09985
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.horaire_hebdo.field_horaire
+    - field.field.paragraph.horaire_hebdo.field_jour
+    - paragraphs.paragraphs_type.horaire_hebdo
+  module:
+    - datetime_range
+id: paragraph.horaire_hebdo.default
+targetEntityType: paragraph
+bundle: horaire_hebdo
+mode: default
+content:
+  field_horaire:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_jour:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

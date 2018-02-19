@@ -1,0 +1,8 @@
+uuid: 0a77e2d3-7a50-4ee6-b54c-f3ebf2ea37cd
+langcode: fr
+status: true
+dependencies: {  }
+id: date_only_courte
+label: 'Date Only - Courte'
+locked: false
+pattern: d/m

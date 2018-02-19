@@ -1,0 +1,29 @@
+uuid: 717496d2-bce1-4ae1-a762-2b9e208187f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activite
+    - node.type.atelier
+    - taxonomy.vocabulary.activites
+id: node.atelier.field_activite
+field_name: field_activite
+entity_type: node
+bundle: atelier
+label: Activité
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      activites: activites
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

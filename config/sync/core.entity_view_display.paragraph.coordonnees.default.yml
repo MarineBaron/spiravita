@@ -1,0 +1,54 @@
+uuid: fa8d15a1-eede-4bcf-a23c-17fbd3d9f8ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.coordonnees.field_email
+    - field.field.paragraph.coordonnees.field_facebook
+    - field.field.paragraph.coordonnees.field_site_web
+    - field.field.paragraph.coordonnees.field_telephone
+    - paragraphs.paragraphs_type.coordonnees
+  module:
+    - link
+    - social_media_links_field
+id: paragraph.coordonnees.default
+targetEntityType: paragraph
+bundle: coordonnees
+mode: default
+content:
+  field_email:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_facebook:
+    weight: 4
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+  field_site_web:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_telephone:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

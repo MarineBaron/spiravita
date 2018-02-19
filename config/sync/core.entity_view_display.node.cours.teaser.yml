@@ -1,0 +1,70 @@
+uuid: ed760b1a-ab60-4694-bd10-1c48341f7f49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cours.body
+    - field.field.node.cours.field_activite
+    - field.field.node.cours.field_horaire_hebdo
+    - field.field.node.cours.field_image
+    - field.field.node.cours.field_intervenant
+    - field.field.node.cours.field_public
+    - field.field.node.cours.field_reservation
+    - node.type.cours
+  module:
+    - entity_reference_revisions
+    - user
+id: node.cours.teaser
+targetEntityType: node
+bundle: cours
+mode: teaser
+content:
+  field_activite:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_horaire_hebdo:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_intervenant:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_public:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_reservation:
+    type: boolean
+    weight: 4
+    region: content
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image: true
+  langcode: true
+  links: true

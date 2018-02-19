@@ -1,0 +1,22 @@
+uuid: 59651f75-7db0-46c5-8c89-7c326eea1081
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.atelier
+id: node.atelier.promote
+field_name: promote
+entity_type: node
+bundle: atelier
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

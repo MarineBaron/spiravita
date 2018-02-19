@@ -1,0 +1,81 @@
+uuid: 48e4d14c-aa3d-4fb6-89e8-a1cfc205e6bb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.atelier.body
+    - field.field.node.atelier.field_activite
+    - field.field.node.atelier.field_dates
+    - field.field.node.atelier.field_horaire_hebdo
+    - field.field.node.atelier.field_image
+    - field.field.node.atelier.field_intervenant
+    - field.field.node.atelier.field_public
+    - field.field.node.atelier.field_reservation
+    - node.type.atelier
+  module:
+    - datetime
+    - entity_reference_revisions
+    - user
+id: node.atelier.teaser
+targetEntityType: node
+bundle: atelier
+mode: teaser
+content:
+  field_activite:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_dates:
+    type: datetime_default
+    weight: 4
+    region: content
+    label: visually_hidden
+    settings:
+      timezone_override: ''
+      format_type: date_only_courte
+    third_party_settings: {  }
+  field_horaire_hebdo:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_intervenant:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_public:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_reservation:
+    type: boolean
+    weight: 3
+    region: content
+    label: visually_hidden
+    settings:
+      format: custom
+      format_custom_true: 'sur réservation'
+      format_custom_false: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_image: true
+  langcode: true
+  links: true

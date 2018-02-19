@@ -1,0 +1,9 @@
+uuid: 951ea98e-722f-42ed-bad0-862bbee86820
+langcode: fr
+status: true
+dependencies: {  }
+id: titre_texte
+label: 'Titre & Texte'
+icon_uuid: null
+description: 'Contient un champ titre & un champ texte'
+behavior_plugins: {  }

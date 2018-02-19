@@ -1,0 +1,37 @@
+uuid: aadd64a0-27dd-41c7-b1ad-2305be7729a6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.location
+    - field.storage.block_content.field_info
+    - paragraphs.paragraphs_type.titre_texte
+  module:
+    - entity_reference_revisions
+id: block_content.location.field_info
+field_name: field_info
+entity_type: block_content
+bundle: location
+label: Info
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      titre_texte: titre_texte
+    target_bundles_drag_drop:
+      coordonnees:
+        weight: 4
+        enabled: false
+      horaire_hebdo:
+        weight: 5
+        enabled: false
+      titre_texte:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

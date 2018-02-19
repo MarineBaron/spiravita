@@ -1,0 +1,116 @@
+uuid: 19031d6b-93b8-4e29-82dd-92e3a66b2246
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.atelier.body
+    - field.field.node.atelier.field_activite
+    - field.field.node.atelier.field_dates
+    - field.field.node.atelier.field_horaire_hebdo
+    - field.field.node.atelier.field_image
+    - field.field.node.atelier.field_intervenant
+    - field.field.node.atelier.field_public
+    - field.field.node.atelier.field_reservation
+    - image.style.thumbnail
+    - node.type.atelier
+  module:
+    - datetime
+    - image
+    - paragraphs
+    - text
+id: node.atelier.default
+targetEntityType: node
+bundle: atelier
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_activite:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_dates:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_horaire_hebdo:
+    weight: 4
+    settings:
+      title: 'Horaire Hebdo'
+      title_plural: 'Horaires Hebdo'
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: horaire_hebdo
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_image:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_intervenant:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_public:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_reservation:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

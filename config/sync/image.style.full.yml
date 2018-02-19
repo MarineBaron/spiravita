@@ -1,0 +1,14 @@
+uuid: fd127bfb-6c00-4d8e-a7b0-c31171b915a2
+langcode: fr
+status: true
+dependencies: {  }
+name: full
+label: Full
+effects:
+  98c59b50-c8c5-481b-94cc-a16d54be2df5:
+    uuid: 98c59b50-c8c5-481b-94cc-a16d54be2df5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 800

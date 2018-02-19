@@ -1,0 +1,11 @@
+uuid: 9ab1c491-3b86-42e2-b6b1-2d081d4f62ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+id: block_content.entete
+target_entity_type_id: block_content
+target_bundle: entete
+default_langcode: site_default
+language_alterable: false

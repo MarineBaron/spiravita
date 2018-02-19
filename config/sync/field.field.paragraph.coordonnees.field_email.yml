@@ -1,0 +1,19 @@
+uuid: fab66f6e-cfae-466f-baba-82ca5c23d47d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_email
+    - paragraphs.paragraphs_type.coordonnees
+id: paragraph.coordonnees.field_email
+field_name: field_email
+entity_type: paragraph
+bundle: coordonnees
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,17 @@
+uuid: 9c72c78b-2ecb-4797-b5d5-f244eda760c3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Atelier
+type: atelier
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

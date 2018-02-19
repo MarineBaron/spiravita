@@ -1,0 +1,9 @@
+uuid: d72e3bec-83bf-4e5e-8475-e7340ac5d30e
+langcode: fr
+status: true
+dependencies: {  }
+id: horaire_hebdo
+label: 'Horaire Hebdo'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

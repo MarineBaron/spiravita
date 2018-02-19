@@ -1,0 +1,14 @@
+uuid: b538cc1a-6ab5-4e6a-83c4-d6018d2726a8
+name: SpiraVita
+mail: marinebaron0@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /accueil
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

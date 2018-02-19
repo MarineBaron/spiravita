@@ -1,0 +1,9 @@
+uuid: ef6d6bed-352f-4245-8b25-6370b30bdea7
+langcode: fr
+status: true
+dependencies: {  }
+name: Niveau
+vid: niveau
+description: ''
+hierarchy: 0
+weight: 0
