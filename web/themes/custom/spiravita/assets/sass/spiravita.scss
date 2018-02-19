@@ -1,0 +1,202 @@
+// compileExpanded: ../../css/$1.css
+.toolbar-vertical .navbar-fixed-top,
+.toolbar-horizontal .navbar-fixed-top {
+  top: 40px !important;
+}
+
+.toolbar-vertical.toolbar-tray-open .navbar-fixed-top {
+  left: 150px !important;
+}
+
+.toolbar-vertical .main-container {
+  margin-top: 40px !important;
+}
+
+.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
+  top: 78px !important;
+}
+
+.toolbar-horizontal .main-container {
+  margin-top: 40px !important;
+}
+
+.toolbar-horizontal.toolbar-tray-open .main-container {
+  margin-top: 78px !important;
+}
+
+/* -------------------------
+GLOBAL
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+html,
+body {
+  font-family: 'Arimo';
+	font-weight:400;
+	font-size:13px;
+	color:#6f6f6f;
+	background-color: #fff;
+	overflow-x:hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Arimo';
+	font-weight: bold;
+	letter-spacing:1px;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+a:hover {
+	color: #2c3e50;
+}
+
+a, a:hover, a:active,
+a:focus, button:focus, .btn:focus,
+.form-control:focus {
+	outline: none !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle {
+	border-color: #283949;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color:#283949;
+}
+
+/*
+.top-bar {
+	background-color: #283949;
+	padding: 10px 0;
+	font-size:15px;
+	color:#ddd;
+	border-top: 1px solid #2c3e50;
+}
+
+.info-box {
+	display: inline-block;
+	margin-right:25px;
+	font-size:14px;
+}
+
+.top-bar a {
+	color: #ddd;
+}
+
+
+.top-bar a:hover, .top-bar a:hover .info-box i {
+	color: #2c3e50;
+}
+
+.info-box i {
+	margin-right:20px;
+	margin-top: 7px;
+	text-align: center;
+	color: #2c3e50;
+	float: left;
+	font-size: 36px;
+}
+
+.info-text {
+	overflow: hidden;
+	font-weight: 300;
+	display: inline-block;
+}
+
+.info-text h5 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom:0px;
+}
+
+.top-social li {
+	margin: 0 5px;
+}
+
+.top-social li a {
+  font-size: 18px;
+  line-height: 50px;
+}
+*/
+
+/* main Menu */
+
+.navbar-default {
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #e64090;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-default li {
+  z-index: 22;
+  margin-left: 0;
+}
+
+.navbar-default .navbar-nav {
+  float: right !important;
+  margin-right: -15px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #1d1d1b;
+  display: block;
+  font-size: 14px;
+  line-height: 75px;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: 'Arimo';
+}
+
+/*
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #fff;
+}
+*/
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: #e64090;
+  background-color: transparent;
+}
+
+/*
+.dropdown-menu,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  color: #e64090;
+  background-color:transparent;
+}
+*/
+
+.navbar-header {
+  margin-top: 12px;
+  a.logo img {
+    width: 178px;
+    height: 55px;
+  }
+}
