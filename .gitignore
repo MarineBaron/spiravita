@@ -22,6 +22,6 @@
 
 # Ignore files sass
 /web/themes/custom/spiravita/.sass-cache
-/web/themes/custom/spiravita/assets/*
-/web/themes/custom/spiravita/scss/*
+/web/themes/custom/spiravita/assets
+/web/themes/custom/spiravita/scss
 /web/themes/custom/spiravita/confif.rb
