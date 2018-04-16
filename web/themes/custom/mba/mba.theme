@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function mba_preprocess_page(&$variables) {
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+
+  if (!$logged_in) {
+    $libraries['# attached']['library'][] = 'core/drupal.ajax';
+    $libraries['# attached']['library'][] = 'core/drupal.dialog.ajax';
+    render($libraries);
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mba_form_contact_message_feedback_form_alter(&$form, &$form_state) {
+
+  $form['name']['#prefix'] = '<div class="input-group"><span class="input-group-addon"><span class="fa fa-user"></span></span>';
+  $form['name']['#suffix'] = '</div>';
+  $form['name']['#attributes']['placeholder'][] = $form['name']['#title'];
+  $form['name']['#attributes']['class'][] = 'form-control';
+  unset($form['name']['#title']);
+
+  $form['mail']['#prefix'] = '<div class="input-group"><span class="input-group-addon"><span class="fa fa-envelope"></span></span>';
+  $form['mail']['#suffix'] = '</div>';
+  $form['mail']['#attributes']['placeholder'][] = $form['mail']['#title'];
+  $form['mail']['#attributes']['class'][] = 'form-control';
+  unset($form['mail']['#title']);
+
+  $form['subject']['widget'][0]['#prefix'] = '<div class="input-group"><span class="input-group-addon"><span class="fa fa-th-list"></span></span>';
+  $form['subject']['widget'][0]['#suffix'] = '</div>';
+  $form['subject']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
+  $form['subject']['widget'][0]['value']['#attributes']['placeholder'][] = $form['subject']['widget'][0]['#title'];
+  $form['subject']['widget'][0]['#title'] = '';
+  unset($form['subject']['widget'][0]['value']['#title']);
+
+  $form['message']['widget'][0]['#prefix'] = '<div class="input-group"><span class="input-group-addon"><span class="fa fa-comments"></span></span>';
+  $form['message']['widget'][0]['#suffix'] = '</div>';
+  $form['message']['widget'][0]['value']['#attributes']['class'][] = 'form-control';
+  $form['message']['widget'][0]['value']['#attributes']['placeholder'][] = $form['message']['widget'][0]['#title'];
+  $form['message']['widget'][0]['#title'] = '';
+  unset($form['message']['widget'][0]['value']['#title']);
+
+  $form['actions']['#prefix'] = '<div class="clearfix">';
+  $form['actions']['preview']['#access'] = FALSE;
+}

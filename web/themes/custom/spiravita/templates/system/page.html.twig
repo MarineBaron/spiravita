@@ -158,7 +158,31 @@
     </div>
   </div>
 {% endblock %}
-
+<div class="bottom {{ container }}">
+  <div class="row">
+    {% if page.bottom_1 %}
+      {% block bottom_1 %}
+        <section class="col col-sm-12 col-md-4" role="contentinfo">
+          {{ page.bottom_1 }}
+        </section>
+      {% endblock %}
+    {% endif %}
+    {% if page.bottom_2 %}
+      {% block bottom_2 %}
+        <section class="col col-sm-12 col-md-4" role="contentinfo">
+          {{ page.bottom_2 }}
+        </section>
+      {% endblock %}
+    {% endif %}
+    {% if page.bottom_3 %}
+      {% block bottom_3 %}
+        <section class="col col-sm-12 col-md-4" role="contentinfo">
+          {{ page.bottom_3 }}
+        </section>
+      {% endblock %}
+    {% endif %}
+  </div>
+</div>
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">

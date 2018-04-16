@@ -1,0 +1,394 @@
+.mba-overload {
+  position: relative;
+  display: none;
+  background-color: rgba(96, 146, 166, 0.85);
+  transition-property: opacity;
+  opacity: 0;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    a {
+      padding: 30px;
+      text-align: center;
+      width: 100%;
+      display: block;
+      color: #fff;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.mba-overload.active {
+  opacity: 1;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#block-mba-block-entete {
+  .slideshow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+  }
+
+  .carousel,
+  .carousel.item {
+    width: 100%;
+    height: 600px;
+
+    img.img-responsive {
+      height: 600px;
+    }
+  }
+
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .slideshow-hover {
+    margin: 100px;
+    height: 400px;
+
+    .field--name-field-logo,
+    .field--name-field-logo .field--item {
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .field--name-field-titre {
+      color: #2c3e50;
+      text-transform: uppercase;
+      font-size: 25px;
+      letter-spacing: 2px;
+
+      span {
+        color: white;
+      }
+    }
+
+    .field--name-field-info .paragraph--type--titre-texte {
+      margin: 15px;
+      margin-top: 60px;
+      padding: 10px;
+      background-color: rgba(96, 146, 166, 0.85);
+      color: white;
+      height: 160px;
+
+      .field--name-field-titre {
+        height: 100px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        color: #2c3e50;
+      }
+
+      .field--name-field-titre::after {
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: rgba(44, 62, 80, 0.20);
+      }
+
+      .field--name-field-text {
+        height: 57px;
+      }
+    }
+  }
+
+  .field--name-field-description {
+    padding: 60px;
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+h2.block-title,
+section .view-header p {
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2.block-title {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+section .view-header p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+section#block-mba-block-activites {
+  margin: 50px;
+
+  .view-content .col > div {
+    margin: 10px;
+    padding: 20px;
+    height: 230px;
+    background-color: white;
+    position: relative;
+
+    .mba-overload {
+      padding: -20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+      color: #2c3e50;
+      height: 35px;
+    }
+
+    .mba-border {
+      margin-bottom: 15px;
+      width: 60px;
+      height: 3px;
+      background-color: rgba(44, 62, 80, 0.20);
+    }
+  }
+}
+
+section#block-mba-block-intervenants {
+  margin-top: 50px;
+  background-image:
+    url(../images/team.png),
+    url(../images/team-top.png);
+  background-repeat: no-repeat, repeat;
+  background-position: bottom center, top center;
+  text-align: center;
+
+  h2,
+  div.view-header p {
+    color: #ddd;
+  }
+
+  .view-content .col > article {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+
+    .field--name-field-prenom {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .field--name-field-fonction {
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+}
+
+section#block-mba-block-cours {
+  background-color: rgba(229, 229, 229, 0.97);
+}
+
+section#block-mba-block-ateliers {
+  background-color: rgba(240, 240, 240, 0.97);
+}
+
+section#block-mba-block-cours,
+section#block-mba-block-ateliers {
+  padding: 50px;
+  text-align: center;
+
+/*
+  .view-content .col > div > span > article {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+*/
+article.cours,
+article.atelier {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+
+    .field--name-field-activite {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .field--name-field-public {
+      text-transform: uppercase;
+      color: #2c3e50;
+      font-size: 10px;
+    }
+
+    .field--name-field-prenom {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 10px;
+
+      a,
+      a:hover {
+        color: #e64090;
+      }
+    }
+  }
+
+  .field--name-field-jour {
+    font-weight: bold;
+  }
+
+  .field--item--resa {
+    background-color: #e64090;
+    color: #fff;
+  }
+
+  .field--name-field-dates {
+    color: #2c3e50;
+  }
+}
+
+section#block-mba-block-cours .cours.noresa,
+section#block-mba-block-ateliers,
+article.cours.noresa,
+article.atelier {
+  .field--name-field-horaire-hebdo {
+    .field--name-field-horaire.field--item--resa {
+      display: none;
+    }
+  }
+}
+
+section#block-mba-block-cours .cours.resa,
+article.cours.resa {
+  .field--name-field-horaire-hebdo {
+    .field--name-field-horaire.field--item {
+      display: none;
+    }
+  }
+}
+
+#drupal-modal article.cours,
+#drupal-modal article.atelier {
+  .mba-cours-infos {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.97);
+
+    .field--name-field-jour {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .field--name-horaire-hebdo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .field--item--resa {
+      background-color: #e64090;
+      color: #fff;
+    }
+
+    .field--name-field-dates {
+      color: #2c3e50;
+    }
+
+    .field--name-field-tarif {
+      color: #e64090;
+      font-size: 20px;
+    }
+  }
+
+  .field--name-field-intervenant,
+  .field--name-field-activite {
+    margin-top: 20px;
+  }
+}
+
+section#block-mba-block-location {
+  padding-top: 50px;
+  background-color: rgba(229, 229, 229, 0.97);
+
+  > div {
+    padding: 50px;
+  }
+
+  .field--name-field-titre .field--item {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #2c3e50;
+    height: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  section#block-mba-block-entete {
+    .slideshow {
+      height: 1100px;
+    }
+
+    .slideshow-hover {
+      height: 900px;
+    }
+
+    .carousel,
+    .carousel.item {
+      height: 1100px;
+
+      img.img-responsive {
+        height: 1100px;
+      }
+    }
+  }
+}
+

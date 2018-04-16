@@ -1,39 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Arimo");
-.toolbar-vertical .navbar-fixed-top,
-.toolbar-horizontal .navbar-fixed-top {
-  top: 40px !important;
+/* -------------------------
+FONTS
+----------------------------*/
+/* arimo-regular - latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/arimo/arimo-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Arimo Regular"), local("Arimo-Regular"), url("../fonts/arimo/arimo-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/arimo/arimo-v11-latin-regular.woff2") format("woff2"), url("../fonts/arimo/arimo-v11-latin-regular.woff") format("woff"), url("../fonts/arimo/arimo-v11-latin-regular.ttf") format("truetype"), url("../fonts/arimo/arimo-v11-latin-regular.svg#Arimo") format("svg");
+  /* Legacy iOS */
 }
 
-.toolbar-vertical.toolbar-tray-open .navbar-fixed-top {
-  left: 150px !important;
+/* arimo-700 - latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/arimo/arimo-v11-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Arimo Bold"), local("Arimo-Bold"), url("../fonts/arimo/arimo-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/arimo/arimo-v11-latin-700.woff2") format("woff2"), url("../fonts/arimo/arimo-v11-latin-700.woff") format("woff"), url("../fonts/arimo/arimo-v11-latin-700.ttf") format("truetype"), url("../fonts/arimo/arimo-v11-latin-700.svg#Arimo") format("svg");
+  /* Legacy iOS */
 }
 
-.toolbar-vertical .main-container {
-  margin-top: 40px !important;
+/* arimo-italic - latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/arimo/arimo-v11-latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Arimo Italic"), local("Arimo-Italic"), url("../fonts/arimo/arimo-v11-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/arimo/arimo-v11-latin-italic.woff2") format("woff2"), url("../fonts/arimo/arimo-v11-latin-italic.woff") format("woff"), url("../fonts/arimo/arimo-v11-latin-italic.ttf") format("truetype"), url("../fonts/arimo/arimo-v11-latin-italic.svg#Arimo") format("svg");
+  /* Legacy iOS */
 }
 
-.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
-  top: 78px !important;
-}
-
-.toolbar-horizontal .main-container {
-  margin-top: 40px !important;
-}
-
-.toolbar-horizontal.toolbar-tray-open .main-container {
-  margin-top: 78px !important;
+/* arimo-700italic - latin */
+@font-face {
+  font-family: 'Arimo';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/arimo/arimo-v11-latin-700italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Arimo Bold Italic"), local("Arimo-BoldItalic"), url("../fonts/arimo/arimo-v11-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/arimo/arimo-v11-latin-700italic.woff2") format("woff2"), url("../fonts/arimo/arimo-v11-latin-700italic.woff") format("woff"), url("../fonts/arimo/arimo-v11-latin-700italic.ttf") format("truetype"), url("../fonts/arimo/arimo-v11-latin-700italic.svg#Arimo") format("svg");
+  /* Legacy iOS */
 }
 
 /* -------------------------
 GLOBAL
 ----------------------------*/
-html,
-body {
+body, .ui-widget {
   font-family: 'Arimo';
   font-weight: 400;
   font-size: 13px;
   color: #6f6f6f;
-  background-color: #fff;
+  background-color: #f9f9f9;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -50,7 +70,7 @@ ul {
   list-style: none;
 }
 
-a:hover {
+a, a:hover {
   color: #2c3e50;
 }
 
@@ -60,6 +80,42 @@ a:focus, button:focus, .btn:focus,
   outline: none !important;
   text-decoration: none !important;
   box-shadow: none !important;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 0;
+  padding: 15px 15px;
+  background-color: rgba(96, 146, 166, 0.85);
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Arimo';
+  font-weight: bold;
+}
+
+/* -------------------------
+NAVBAR & MAIN-CONTAINER
+----------------------------*/
+.navbar-is-fixed-top .main-container {
+  margin-top: 105px !important;
+}
+
+.navbar-is-fixed-top.toolbar-horizontal .main-container {
+  margin-top: 66px !important;
+}
+
+.navbar-is-fixed-top.toolbar-horizontal.toolbar-tray-open .main-container {
+  margin-top: 105px !important;
+}
+
+.navbar-is-fixed-top.toolbar-horizontal .navbar-fixed-top {
+  top: 39px !important;
+}
+
+.navbar-is-fixed-top.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
+  top: 78px !important;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -76,61 +132,9 @@ a:focus, button:focus, .btn:focus,
   background-color: #283949;
 }
 
-/*
-.top-bar {
-	background-color: #283949;
-	padding: 10px 0;
-	font-size:15px;
-	color:#ddd;
-	border-top: 1px solid #2c3e50;
-}
-
-.info-box {
-	display: inline-block;
-	margin-right:25px;
-	font-size:14px;
-}
-
-.top-bar a {
-	color: #ddd;
-}
-
-
-.top-bar a:hover, .top-bar a:hover .info-box i {
-	color: #2c3e50;
-}
-
-.info-box i {
-	margin-right:20px;
-	margin-top: 7px;
-	text-align: center;
-	color: #2c3e50;
-	float: left;
-	font-size: 36px;
-}
-
-.info-text {
-	overflow: hidden;
-	font-weight: 300;
-	display: inline-block;
-}
-
-.info-text h5 {
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom:0px;
-}
-
-.top-social li {
-	margin: 0 5px;
-}
-
-.top-social li a {
-  font-size: 18px;
-  line-height: 50px;
-}
-*/
-/* main Menu */
+/* -------------------------
+NAVBAR INSIDE
+----------------------------*/
 .navbar-default {
   background-color: #fff;
   border: none;
@@ -161,11 +165,6 @@ a:focus, button:focus, .btn:focus,
   font-family: 'Arimo';
 }
 
-/*
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-  color: #fff;
-}
-*/
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > li > a:focus,
@@ -178,18 +177,6 @@ a:focus, button:focus, .btn:focus,
   background-color: transparent;
 }
 
-/*
-.dropdown-menu,
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:focus,
-.dropdown-menu > .active > a:hover {
-  color: #e64090;
-  background-color:transparent;
-}
-*/
 .navbar-header {
   margin-top: 12px;
 }
@@ -197,4 +184,112 @@ a:focus, button:focus, .btn:focus,
 .navbar-header a.logo img {
   width: 178px;
   height: 55px;
+}
+
+/* -------------------------
+MAIN-CONTAINER - INSIDE
+----------------------------*/
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header .container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* -------------------------
+MODAL
+----------------------------*/
+.ui-dialog .ui-dialog-titlebar {
+  display: none;
+}
+
+.ui-dialog article.intervenant {
+  padding: 20px;
+}
+
+.ui-dialog article.intervenant h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color: #2c3e50;
+  height: 60px;
+}
+
+.ui-dialog article.intervenant h2::after {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: rgba(44, 62, 80, 0.2);
+}
+
+.ui-dialog article.intervenant .field--name-field-fonction {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.ui-dialog article.intervenant .flex-container {
+  flex-direction: column;
+  height: 100%;
+}
+
+.ui-dialog article.intervenant .flex-container > div.field--name-field-coordonnees {
+  align-self: flex-end;
+}
+
+/* -------------------------
+BOTTOM
+----------------------------*/
+.bottom {
+  background-color: #2c3e50;
+}
+
+.bottom .region.region-bottom-1,
+.bottom .region.region-bottom-2,
+.bottom .region.region-bottom-3 {
+  padding: 20px;
+}
+
+/* -------------------------
+FORM
+----------------------------*/
+.input-group {
+  margin-top: 5px;
+}
+
+.input-group-addon {
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.region.region-bottom-3 .svg-inline--fa {
+  position: absolute;
+  top: 10px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  left: 7px;
+  color: #2c3e50;
+}
+
+.form-control {
+  border: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+button#edit-submit {
+  float: right;
 }

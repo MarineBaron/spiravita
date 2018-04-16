@@ -1,0 +1,18 @@
+sp_modal.modal_node_route:
+  path: '/sp_modal/node/{nid}'
+  defaults:
+    _controller: 'Drupal\sp_modal\Controller\SpModalController::nodeContent'
+    _title: 'Sp Modal Node'
+  requirements:
+    _format: 'html'
+    _access: 'TRUE'
+sp_modal.modal_taxo_route:
+  path: '/sp_modal/taxonomy/term/{tid}'
+  defaults:
+    _controller: 'Drupal\sp_modal\Controller\SpModalController::termContent'
+    _title: 'Sp Modal Term'
+  requirements:
+    _format: 'html'
+    _access: 'TRUE'
+
+

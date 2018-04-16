@@ -3,6 +3,17 @@ global-styling:
     theme:
       css/style.css: {}
       css/spiravita.css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal.dialog
+    - core/system
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog.ajax
 
 bootstrap-scripts:
   js:
@@ -18,3 +29,20 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+home:
+  css:
+    theme:
+      css/home.css: {}
+  js:
+    js/home.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal.dialog
+    - core/system
+    - core/drupal
+    - core/drupalSettings
+    - core/drupal.dialog.ajax

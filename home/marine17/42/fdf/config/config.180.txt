@@ -1,0 +1,33 @@
+## Uncomment the lines you want to change
+
+## MAP CONFIG
+## -------------
+## define height & width for the map's representation
+## the window will be larger due to the control zone
+
+h 800
+w 1500
+
+## CONTROL CONFIG
+## -------------
+
+## x, y = position on the map (default = middle)
+## z = ratio between z and y (default = 1)
+## r = rotation (deg) (default = 0)
+## o = zoom (1 is the whole map)
+## p = projection (0 = parall / 1 = perspective)
+## b = blind faces (0 = no blind faces / 1 = blind faces)
+## g = color gradient (0 = colors defines by file, 1 = color gradient)
+## c = ceil color (uses if color gradient = 1)
+## f = floor color (uses if color gradient = 1)
+
+# x 0 (but calculate on first load to be middle X)
+# y 0 (but calculate on first load to be middle Y)
+z 1
+r 0
+# o 1
+p 0
+b 1
+# g 1
+# c 0xFF0000
+# f 0x00FF00

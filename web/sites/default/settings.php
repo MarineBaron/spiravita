@@ -550,6 +550,7 @@ if ($settings['hash_salt']) {
  * about securing private files.
  */
 # $settings['file_private_path'] = '';
+$settings['file_private_path'] = '../private';
 
 /**
  * Session write interval:
@@ -785,11 +786,11 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 }
 
 $databases['default']['default'] = array (
-  'database' => 'spiravita',
-  'username' => 'spiravita',
-  'password' => 'spiravita',
+  'database' => 'p6603_2',
+  'username' => 'p6603_2',
+  'password' => 'nBKeOd58IpB1',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'cl1-sql20',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',

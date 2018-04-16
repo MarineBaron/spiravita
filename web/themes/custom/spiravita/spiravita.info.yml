@@ -15,10 +15,14 @@ regions:
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
+  bottom_1: 'Bottom First'
+  bottom_2: 'Bottom Second'
+  bottom_3: 'Bottom Third'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
 libraries:
-  - 'spiravita/global-styling'
   - 'spiravita/bootstrap-scripts'
+  - 'spiravita/global-styling'
+

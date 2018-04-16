@@ -116,6 +116,6 @@ $settings['rebuild_access'] = TRUE;
 $settings['skip_permissions_hardening'] = TRUE;
 
 $settings['trusted_host_patterns'] = array(
-  '^spiravita\.dev$',
-  '^.+\.spiravita\.dev$',
+  '^spiravita\.marinealaplage\.fr$',
+  '^.+\.spiravita\.marinealaplage\.fr$',
 );
