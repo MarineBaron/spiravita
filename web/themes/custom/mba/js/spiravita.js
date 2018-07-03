@@ -30,6 +30,21 @@ Drupal.behaviors.spiravitaHomeBehavior = {
           $(this).find(".mba-overload").removeClass("active");
         });
       });
+
+      var highestBox = 0;
+      $('#block-mba-block-cours article.cours').each(function () {
+          if ($(this).height() > highestBox) {
+          highestBox = $(this).height();
+        }
+      });
+      $('#block-mba-block-cours article.cours').height(highestBox);
+      highestBox = 0;
+      $('#block-mba-block-ateliers article.atelier').each(function () {
+          if ($(this).height() > highestBox) {
+          highestBox = $(this).height();
+        }
+      });
+      $('#block-mba-block-ateliers article.atelier').height(highestBox);
     });
   }
 };

@@ -54,3 +54,19 @@ function mba_form_contact_message_feedback_form_alter(&$form, &$form_state) {
   $form['actions']['#prefix'] = '<div class="clearfix">';
   $form['actions']['preview']['#access'] = FALSE;
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function mba_form_simplenews_subscriptions_block_block_newsletter_alter(&$form, &$form_state) {
+$form['mail']['widget'][0]['#prefix'] = '<div class="input-group"><span class="input-group-addon"><span class="fa fa-envelope"></span></span>';
+$form['mail']['widget'][0]['#suffix'] = '</div>';
+$form['mail']['widget'][0]['value']['#description'] = '';
+$form['mail']['widget'][0]['value']['#placeholder'] = 'Votre adresse de courriel';
+$form['actions']['subscribe']['#value'] = "S'inscrire";
+$form['actions']['subscribe']['#attributes']['class'][] = "btn btn-primary";
+$form['actions']['unsubscribe']['#value'] = "Se désinscrire";
+$form['actions']['unsubscribe']['#attributes']['class'][] = "btn btn-primary";
+$form['message']['#markup'] = '<h4>Newsletter</h4>';
+}
+

@@ -230,48 +230,66 @@ MODAL
 /* line 241, ../sass/spiravita.scss */
 #drupal-modal {
   padding: 30px;
+  /*
+    h2::after {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      content: "";
+      width: 60px;
+      height: 3px;
+      background-color: rgba(44, 62, 80, 0.20);
+    }
+    */
 }
 /* line 244, ../sass/spiravita.scss */
+#drupal-modal .modal-body {
+  max-height: 500px;
+  overflow-y: auto;
+  /*margin-bottom: 10px;*/
+}
+/* line 250, ../sass/spiravita.scss */
+#drupal-modal article {
+  margin-bottom: 10px;
+}
+/* line 254, ../sass/spiravita.scss */
 #drupal-modal #drupal-modal--header {
   display: none;
 }
-/* line 248, ../sass/spiravita.scss */
+/* line 258, ../sass/spiravita.scss */
 #drupal-modal h2 {
   margin-top: 0;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
   color: #2c3e50;
-  height: 40px;
+  height: 20px;
 }
-/* line 257, ../sass/spiravita.scss */
-#drupal-modal h2::after {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  content: "";
+/* line 267, ../sass/spiravita.scss */
+#drupal-modal .mba-border {
   width: 60px;
   height: 3px;
   background-color: rgba(44, 62, 80, 0.2);
+  margin-bottom: 5px;
 }
-/* line 269, ../sass/spiravita.scss */
+/* line 288, ../sass/spiravita.scss */
 #drupal-modal article.intervenant .field--name-field-fonction {
   text-transform: uppercase;
   font-size: 12px;
   color: #2c3e50;
   margin-bottom: 5px;
 }
-/* line 276, ../sass/spiravita.scss */
+/* line 295, ../sass/spiravita.scss */
 #drupal-modal article.intervenant .flex-container {
   flex-direction: column;
   height: 100%;
 }
-/* line 280, ../sass/spiravita.scss */
+/* line 299, ../sass/spiravita.scss */
 #drupal-modal article.intervenant .flex-container > div.field--name-field-coordonnees {
   align-self: flex-end;
 }
 
-/* line 287, ../sass/spiravita.scss */
+/* line 306, ../sass/spiravita.scss */
 .modal-dialog {
   position: absolute;
   top: 50%;
@@ -279,7 +297,7 @@ MODAL
   transform: translate(-50%, -50%) !important;
 }
 
-/* line 294, ../sass/spiravita.scss */
+/* line 313, ../sass/spiravita.scss */
 .modal-content {
   border-radius: 0;
 }
@@ -287,18 +305,18 @@ MODAL
 /* -------------------------
 BOTTOM
 ---------------------------- */
-/* line 302, ../sass/spiravita.scss */
+/* line 321, ../sass/spiravita.scss */
 .bottom {
   background-color: #2c3e50;
 }
-/* line 305, ../sass/spiravita.scss */
+/* line 324, ../sass/spiravita.scss */
 .bottom .region.region-bottom-1,
 .bottom .region.region-bottom-2,
 .bottom .region.region-bottom-3 {
   padding: 20px;
 }
 
-/* line 313, ../sass/spiravita.scss */
+/* line 332, ../sass/spiravita.scss */
 section#block-mba-coordonnees .field--name-body {
   padding: 20px;
   color: #ccc;
@@ -307,19 +325,19 @@ section#block-mba-coordonnees .field--name-body {
 /* -------------------------
 FORM
 ---------------------------- */
-/* line 323, ../sass/spiravita.scss */
+/* line 342, ../sass/spiravita.scss */
 .input-group {
   margin-top: 5px;
 }
 
-/* line 327, ../sass/spiravita.scss */
+/* line 346, ../sass/spiravita.scss */
 .input-group-addon {
   background-color: #fff;
   border: none;
   border-radius: 0;
 }
 
-/* line 333, ../sass/spiravita.scss */
+/* line 352, ../sass/spiravita.scss */
 .region.region-bottom-3 .svg-inline--fa {
   position: absolute;
   top: 10px;
@@ -330,18 +348,27 @@ FORM
   color: #2c3e50;
 }
 
-/* line 343, ../sass/spiravita.scss */
-.form-control {
+/* line 362, ../sass/spiravita.scss */
+.form-control,
+.input-group .form-control:last-child {
   border: none;
   box-shadow: none;
+  border-radius: 0;
 }
 
-/* line 348, ../sass/spiravita.scss */
+/* line 370, ../sass/spiravita.scss */
 textarea.form-control {
   resize: none;
 }
 
-/* line 352, ../sass/spiravita.scss */
-button#edit-submit {
+/* line 374, ../sass/spiravita.scss */
+button#edit-submit,
+button#edit-subscribe,
+button#edit-unsubscribe {
   float: right;
+}
+
+/* line 380, ../sass/spiravita.scss */
+#edit-message--2 {
+  text-transform: uppercase;
 }

@@ -169,10 +169,27 @@ section .view-header p {
 }
 
 /* line 167, ../sass/home.scss */
+section#block-mba-block-actualites {
+  padding: 50px;
+  background-color: rgba(229, 229, 229, 0.97);
+}
+/* line 171, ../sass/home.scss */
+section#block-mba-block-actualites h3 {
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-weight: normal;
+}
+/* line 177, ../sass/home.scss */
+section#block-mba-block-actualites article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 183, ../sass/home.scss */
 section#block-mba-block-activites {
   margin: 50px;
 }
-/* line 170, ../sass/home.scss */
+/* line 186, ../sass/home.scss */
 section#block-mba-block-activites .view-content .col > div {
   margin: 10px;
   padding: 20px;
@@ -180,11 +197,11 @@ section#block-mba-block-activites .view-content .col > div {
   background-color: white;
   position: relative;
 }
-/* line 177, ../sass/home.scss */
+/* line 193, ../sass/home.scss */
 section#block-mba-block-activites .view-content .col > div .mba-overload {
-  padding: -20px;
+  padding: 20px;
 }
-/* line 181, ../sass/home.scss */
+/* line 197, ../sass/home.scss */
 section#block-mba-block-activites .view-content .col > div h2 {
   margin-top: 0;
   text-transform: uppercase;
@@ -193,7 +210,7 @@ section#block-mba-block-activites .view-content .col > div h2 {
   color: #2c3e50;
   height: 35px;
 }
-/* line 190, ../sass/home.scss */
+/* line 206, ../sass/home.scss */
 section#block-mba-block-activites .view-content .col > div .mba-border {
   margin-bottom: 15px;
   width: 60px;
@@ -201,7 +218,7 @@ section#block-mba-block-activites .view-content .col > div .mba-border {
   background-color: rgba(44, 62, 80, 0.2);
 }
 
-/* line 199, ../sass/home.scss */
+/* line 215, ../sass/home.scss */
 section#block-mba-block-intervenants {
   margin-top: 50px;
   background-image: url(../images/team.png), url(../images/team-top.png);
@@ -209,57 +226,51 @@ section#block-mba-block-intervenants {
   background-position: bottom center, top center;
   text-align: center;
 }
-/* line 208, ../sass/home.scss */
+/* line 224, ../sass/home.scss */
 section#block-mba-block-intervenants h2,
 section#block-mba-block-intervenants div.view-header p {
   color: #ddd;
 }
-/* line 213, ../sass/home.scss */
+/* line 229, ../sass/home.scss */
 section#block-mba-block-intervenants .view-content .col > article {
   margin: 10px;
   padding: 20px;
   color: white;
 }
-/* line 218, ../sass/home.scss */
+/* line 234, ../sass/home.scss */
 section#block-mba-block-intervenants .view-content .col > article .field--name-field-prenom {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
 }
-/* line 224, ../sass/home.scss */
+/* line 240, ../sass/home.scss */
 section#block-mba-block-intervenants .view-content .col > article .field--name-field-fonction {
   text-transform: uppercase;
   font-size: 12px;
   margin-bottom: 5px;
 }
-/* line 230, ../sass/home.scss */
+/* line 246, ../sass/home.scss */
 section#block-mba-block-intervenants .view-content .col > article img {
   margin: 0 auto;
 }
 
-/* line 236, ../sass/home.scss */
+/* line 252, ../sass/home.scss */
 section#block-mba-block-cours {
   background-color: rgba(229, 229, 229, 0.97);
 }
 
-/* line 240, ../sass/home.scss */
+/* line 256, ../sass/home.scss */
 section#block-mba-block-ateliers {
   background-color: rgba(240, 240, 240, 0.97);
 }
 
-/* line 244, ../sass/home.scss */
+/* line 260, ../sass/home.scss */
 section#block-mba-block-cours,
 section#block-mba-block-ateliers {
   padding: 50px;
   text-align: center;
-  /*
-    .view-content .col > div > span > article {
-      margin: 10px;
-      padding: 20px;
-      background-color: white;
-  */
 }
-/* line 255, ../sass/home.scss */
+/* line 265, ../sass/home.scss */
 section#block-mba-block-cours article.cours,
 section#block-mba-block-cours article.atelier,
 section#block-mba-block-ateliers article.cours,
@@ -267,8 +278,9 @@ section#block-mba-block-ateliers article.atelier {
   margin: 10px;
   padding: 20px;
   background-color: white;
+  position: relative;
 }
-/* line 260, ../sass/home.scss */
+/* line 272, ../sass/home.scss */
 section#block-mba-block-cours article.cours .field--name-field-activite,
 section#block-mba-block-cours article.atelier .field--name-field-activite,
 section#block-mba-block-ateliers article.cours .field--name-field-activite,
@@ -277,7 +289,7 @@ section#block-mba-block-ateliers article.atelier .field--name-field-activite {
   font-weight: bold;
   font-size: 15px;
 }
-/* line 266, ../sass/home.scss */
+/* line 278, ../sass/home.scss */
 section#block-mba-block-cours article.cours .field--name-field-public,
 section#block-mba-block-cours article.atelier .field--name-field-public,
 section#block-mba-block-ateliers article.cours .field--name-field-public,
@@ -286,7 +298,7 @@ section#block-mba-block-ateliers article.atelier .field--name-field-public {
   color: #2c3e50;
   font-size: 10px;
 }
-/* line 272, ../sass/home.scss */
+/* line 284, ../sass/home.scss */
 section#block-mba-block-cours article.cours .field--name-field-prenom,
 section#block-mba-block-cours article.atelier .field--name-field-prenom,
 section#block-mba-block-ateliers article.cours .field--name-field-prenom,
@@ -295,7 +307,7 @@ section#block-mba-block-ateliers article.atelier .field--name-field-prenom {
   font-weight: bold;
   font-size: 10px;
 }
-/* line 277, ../sass/home.scss */
+/* line 289, ../sass/home.scss */
 section#block-mba-block-cours article.cours .field--name-field-prenom a,
 section#block-mba-block-cours article.cours .field--name-field-prenom a:hover,
 section#block-mba-block-cours article.atelier .field--name-field-prenom a,
@@ -306,24 +318,30 @@ section#block-mba-block-ateliers article.atelier .field--name-field-prenom a,
 section#block-mba-block-ateliers article.atelier .field--name-field-prenom a:hover {
   color: #e64090;
 }
-/* line 284, ../sass/home.scss */
-section#block-mba-block-cours .field--name-field-jour,
-section#block-mba-block-ateliers .field--name-field-jour {
+/* line 295, ../sass/home.scss */
+section#block-mba-block-cours article.cours .field--name-field-jour,
+section#block-mba-block-cours article.atelier .field--name-field-jour,
+section#block-mba-block-ateliers article.cours .field--name-field-jour,
+section#block-mba-block-ateliers article.atelier .field--name-field-jour {
   font-weight: bold;
 }
-/* line 288, ../sass/home.scss */
-section#block-mba-block-cours .field--item--resa,
-section#block-mba-block-ateliers .field--item--resa {
+/* line 299, ../sass/home.scss */
+section#block-mba-block-cours article.cours .field--item--resa,
+section#block-mba-block-cours article.atelier .field--item--resa,
+section#block-mba-block-ateliers article.cours .field--item--resa,
+section#block-mba-block-ateliers article.atelier .field--item--resa {
   background-color: #e64090;
   color: #fff;
 }
-/* line 293, ../sass/home.scss */
-section#block-mba-block-cours .field--name-field-dates,
-section#block-mba-block-ateliers .field--name-field-dates {
+/* line 304, ../sass/home.scss */
+section#block-mba-block-cours article.cours .field--name-field-dates,
+section#block-mba-block-cours article.atelier .field--name-field-dates,
+section#block-mba-block-ateliers article.cours .field--name-field-dates,
+section#block-mba-block-ateliers article.atelier .field--name-field-dates {
   color: #2c3e50;
 }
 
-/* line 303, ../sass/home.scss */
+/* line 315, ../sass/home.scss */
 section#block-mba-block-cours .cours.noresa .field--name-field-horaire-hebdo .field--name-field-horaire.field--item--resa,
 section#block-mba-block-ateliers .field--name-field-horaire-hebdo .field--name-field-horaire.field--item--resa,
 article.cours.noresa .field--name-field-horaire-hebdo .field--name-field-horaire.field--item--resa,
@@ -331,49 +349,54 @@ article.atelier .field--name-field-horaire-hebdo .field--name-field-horaire.fiel
   display: none;
 }
 
-/* line 312, ../sass/home.scss */
+/* line 324, ../sass/home.scss */
 section#block-mba-block-cours .cours.resa .field--name-field-horaire-hebdo .field--name-field-horaire.field--item,
 article.cours.resa .field--name-field-horaire-hebdo .field--name-field-horaire.field--item {
   display: none;
 }
 
-/* line 320, ../sass/home.scss */
+/* line 332, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos,
 #drupal-modal article.atelier .mba-cours-infos {
   padding: 20px;
   text-align: center;
   background-color: rgba(240, 240, 240, 0.97);
 }
-/* line 325, ../sass/home.scss */
+/* line 337, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos .field--name-field-jour,
 #drupal-modal article.atelier .mba-cours-infos .field--name-field-jour {
   font-weight: bold;
   font-size: 20px;
 }
-/* line 330, ../sass/home.scss */
+/* line 342, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos .field--name-horaire-hebdo,
 #drupal-modal article.atelier .mba-cours-infos .field--name-horaire-hebdo {
   font-weight: bold;
   font-size: 20px;
 }
-/* line 335, ../sass/home.scss */
+/* line 347, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos .field--item--resa,
 #drupal-modal article.atelier .mba-cours-infos .field--item--resa {
   background-color: #e64090;
   color: #fff;
 }
-/* line 340, ../sass/home.scss */
+/* line 352, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos .field--name-field-dates,
 #drupal-modal article.atelier .mba-cours-infos .field--name-field-dates {
   color: #2c3e50;
 }
-/* line 344, ../sass/home.scss */
+/* line 356, ../sass/home.scss */
+#drupal-modal article.cours .mba-cours-infos .field--name-field-public,
+#drupal-modal article.atelier .mba-cours-infos .field--name-field-public {
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+/* line 361, ../sass/home.scss */
 #drupal-modal article.cours .mba-cours-infos .field--name-field-tarif,
 #drupal-modal article.atelier .mba-cours-infos .field--name-field-tarif {
   color: #e64090;
-  font-size: 20px;
 }
-/* line 350, ../sass/home.scss */
+/* line 366, ../sass/home.scss */
 #drupal-modal article.cours .field--name-field-intervenant,
 #drupal-modal article.cours .field--name-field-activite,
 #drupal-modal article.atelier .field--name-field-intervenant,
@@ -381,16 +404,16 @@ article.cours.resa .field--name-field-horaire-hebdo .field--name-field-horaire.f
   margin-top: 20px;
 }
 
-/* line 356, ../sass/home.scss */
+/* line 372, ../sass/home.scss */
 section#block-mba-block-location {
   padding-top: 50px;
   background-color: rgba(229, 229, 229, 0.97);
 }
-/* line 360, ../sass/home.scss */
+/* line 376, ../sass/home.scss */
 section#block-mba-block-location > div {
   padding: 50px;
 }
-/* line 364, ../sass/home.scss */
+/* line 380, ../sass/home.scss */
 section#block-mba-block-location .field--name-field-titre .field--item {
   text-transform: uppercase;
   font-weight: bold;
@@ -400,20 +423,20 @@ section#block-mba-block-location .field--name-field-titre .field--item {
 }
 
 @media (max-width: 992px) {
-  /* line 375, ../sass/home.scss */
+  /* line 391, ../sass/home.scss */
   section#block-mba-block-entete .slideshow {
     height: 1100px;
   }
-  /* line 379, ../sass/home.scss */
+  /* line 395, ../sass/home.scss */
   section#block-mba-block-entete .slideshow-hover {
     height: 900px;
   }
-  /* line 383, ../sass/home.scss */
+  /* line 399, ../sass/home.scss */
   section#block-mba-block-entete .carousel,
   section#block-mba-block-entete .carousel.item {
     height: 1100px;
   }
-  /* line 387, ../sass/home.scss */
+  /* line 403, ../sass/home.scss */
   section#block-mba-block-entete .carousel img.img-responsive,
   section#block-mba-block-entete .carousel.item img.img-responsive {
     height: 1100px;

@@ -77,14 +77,13 @@
   ]
 %}
 <article{{ attributes.addClass(classes) }}>
-
   {{ title_prefix }}
   {{ title_suffix }}
   <div{{ content_attributes.addClass('content') }}>
-    {{ content.field_activite }}
-    {{ content.field_public }}
-    {{ content.field_intervenant }}
-    {{ content.field_horaire_hebdo }}
+  {{ content.field_activite }}
+  {{ content.field_public }}
+  {{ content.field_intervenant }}
+  {{ content.field_horaire_hebdo }}
   </div>
   <div class="mba-overload">
     <div><a href="{{ url }}"  class="use-ajax" data-dialog-type="modal">En savoir plus</a></div>

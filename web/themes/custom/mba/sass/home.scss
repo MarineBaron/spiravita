@@ -164,6 +164,22 @@ section .view-header p {
   letter-spacing: 1px;
 }
 
+section#block-mba-block-actualites {
+  padding: 50px;
+  background-color: rgba(229, 229, 229, 0.97);
+
+  h3 {
+    text-transform: uppercase;
+    color: #2c3e50;
+    font-weight: normal;
+  }
+
+  article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 section#block-mba-block-activites {
   margin: 50px;
 
@@ -175,7 +191,7 @@ section#block-mba-block-activites {
     position: relative;
 
     .mba-overload {
-      padding: -20px;
+      padding: 20px;
     }
 
     h2 {
@@ -246,17 +262,12 @@ section#block-mba-block-ateliers {
   padding: 50px;
   text-align: center;
 
-/*
-  .view-content .col > div > span > article {
+  article.cours,
+  article.atelier {
     margin: 10px;
     padding: 20px;
     background-color: white;
-*/
-article.cours,
-article.atelier {
-  margin: 10px;
-  padding: 20px;
-  background-color: white;
+    position: relative;
 
     .field--name-field-activite {
       text-transform: uppercase;
@@ -280,19 +291,19 @@ article.atelier {
         color: #e64090;
       }
     }
-  }
 
-  .field--name-field-jour {
-    font-weight: bold;
-  }
+    .field--name-field-jour {
+      font-weight: bold;
+    }
 
-  .field--item--resa {
-    background-color: #e64090;
-    color: #fff;
-  }
+    .field--item--resa {
+      background-color: #e64090;
+      color: #fff;
+    }
 
-  .field--name-field-dates {
-    color: #2c3e50;
+    .field--name-field-dates {
+      color: #2c3e50;
+    }
   }
 }
 
@@ -342,9 +353,13 @@ article.cours.resa {
       color: #2c3e50;
     }
 
+    .field--name-field-public {
+      color: #2c3e50;
+      text-transform: uppercase;
+    }
+
     .field--name-field-tarif {
       color: #e64090;
-      font-size: 20px;
     }
   }
 
