@@ -1,0 +1,52 @@
+uuid: ee140f0b-cef1-43bc-aa4e-e512981787c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.coordonnees
+    - field.field.block_content.coordonnees.body
+    - field.field.block_content.coordonnees.field_facebook
+    - field.field.block_content.coordonnees.field_logo
+    - image.style.thumbnail
+  module:
+    - image
+    - social_media_links_field
+    - text
+id: block_content.coordonnees.default
+targetEntityType: block_content
+bundle: coordonnees
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_select
+    region: content
+  field_logo:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,30 @@
+uuid: f78093b3-398c-4be1-acdf-87995bc97b74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.intervenants
+  module:
+    - system
+    - views
+  theme:
+    - mba
+id: mba_block_intervenants
+theme: mba
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:intervenants-block_1'
+settings:
+  id: 'views_block:intervenants-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

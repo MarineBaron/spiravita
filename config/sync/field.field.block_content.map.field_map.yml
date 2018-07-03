@@ -1,0 +1,33 @@
+uuid: aab4b583-49c0-4ebf-9f7e-c691ad41e67e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.storage.block_content.field_map
+  module:
+    - geofield
+id: block_content.map.field_map
+field_name: field_map
+entity_type: block_content
+bundle: map
+label: Map
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'POINT (2.3733924 48.8814191)'
+    geo_type: Point
+    lat: 48.8814191
+    lon: 2.3733924
+    left: 2.3733924
+    top: 48.8814191
+    right: 2.3733924
+    bottom: 48.8814191
+    geohash: u09wn486bhcwu
+    latlon: '48.8814191,2.3733924'
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

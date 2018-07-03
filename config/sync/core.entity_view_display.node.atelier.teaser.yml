@@ -49,12 +49,13 @@ content:
       link: ''
     third_party_settings: {  }
   field_intervenant:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     weight: 5
     region: content
     label: visually_hidden
     settings:
-      link: true
+      view_mode: champ_unique
+      link: false
     third_party_settings: {  }
   field_public:
     type: entity_reference_label

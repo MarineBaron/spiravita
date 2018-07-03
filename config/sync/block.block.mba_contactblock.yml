@@ -1,0 +1,23 @@
+uuid: 02b7de18-6aa0-4935-baa0-c72d7dd13ccc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+  theme:
+    - mba
+id: mba_contactblock
+theme: mba
+region: bottom_3
+weight: -8
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact Block'
+  provider: contact_block
+  label_display: '0'
+  contact_form: feedback
+visibility: {  }

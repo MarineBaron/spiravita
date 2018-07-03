@@ -1,0 +1,30 @@
+uuid: 6a2c2575-ec8c-47d7-9d98-f8e86fdad49c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.ateliers
+  module:
+    - system
+    - views
+  theme:
+    - mba
+id: mba_block_ateliers
+theme: mba
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:ateliers-block_1'
+settings:
+  id: 'views_block:ateliers-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

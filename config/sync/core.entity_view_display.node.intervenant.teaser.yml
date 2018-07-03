@@ -10,10 +10,10 @@ dependencies:
     - field.field.node.intervenant.field_image
     - field.field.node.intervenant.field_nom
     - field.field.node.intervenant.field_prenom
+    - image.style.medium
     - node.type.intervenant
-    - responsive_image.styles.narrow
   module:
-    - responsive_image
+    - image
     - user
 id: node.intervenant.teaser
 targetEntityType: node
@@ -29,13 +29,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
   field_image:
-    type: responsive_image
+    type: image
     weight: 2
     region: content
     label: visually_hidden
     settings:
-      responsive_image_style: narrow
-      image_link: content
+      image_style: medium
+      image_link: ''
     third_party_settings: {  }
   field_prenom:
     type: string

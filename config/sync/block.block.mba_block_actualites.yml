@@ -1,0 +1,30 @@
+uuid: e8f8be01-8d15-4839-8cbc-901e2cd92a5d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.actualites
+  module:
+    - system
+    - views
+  theme:
+    - mba
+id: mba_block_actualites
+theme: mba
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:actualites-block_1'
+settings:
+  id: 'views_block:actualites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

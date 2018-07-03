@@ -1,0 +1,19 @@
+uuid: d70acd4b-8f23-44d5-802c-318e5c1e96f0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hj6zGNwndnW_J6lKfFcg-tY5e5YqWfgXyt0qioGtXL8
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: SpiraVita
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: marinebaron0@gmail.com
+hyperlinks: false
+new_account: 'on'
+opt_inout: double
+weight: 0

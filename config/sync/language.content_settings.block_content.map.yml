@@ -1,0 +1,11 @@
+uuid: 16e14ae3-9ad1-45c6-9cc1-1c0b38f20336
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+id: block_content.map
+target_entity_type_id: block_content
+target_bundle: map
+default_langcode: site_default
+language_alterable: false

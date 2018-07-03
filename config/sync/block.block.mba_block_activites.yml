@@ -1,0 +1,30 @@
+uuid: 492d654c-30f1-4125-9c39-59955ff8b9b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.activites
+  module:
+    - system
+    - views
+  theme:
+    - mba
+id: mba_block_activites
+theme: mba
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:activites-block_1'
+settings:
+  id: 'views_block:activites-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

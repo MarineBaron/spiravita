@@ -1,0 +1,22 @@
+uuid: 0674e416-d5ae-4db7-a00a-247986f7937d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mba
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mba_help
+theme: mba
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  provider: help
+  label_display: '0'
+visibility: {  }

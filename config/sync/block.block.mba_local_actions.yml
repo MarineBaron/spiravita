@@ -1,0 +1,20 @@
+uuid: 3954ca7c-2b07-4cfd-b82b-7d13edbf8067
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - mba
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: mba_local_actions
+theme: mba
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

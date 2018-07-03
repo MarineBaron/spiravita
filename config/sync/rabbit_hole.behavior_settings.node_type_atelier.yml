@@ -1,0 +1,9 @@
+uuid: 5b31bfae-f28d-4bf6-9b84-1a547e938049
+langcode: fr
+status: true
+dependencies: {  }
+id: node_type_atelier
+action: display_page
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301

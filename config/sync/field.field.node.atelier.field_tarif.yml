@@ -1,0 +1,21 @@
+uuid: a552ee05-7b18-42d0-b4b5-f24aef18da40
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tarif
+    - node.type.atelier
+  module:
+    - text
+id: node.atelier.field_tarif
+field_name: field_tarif
+entity_type: node
+bundle: atelier
+label: Tarif
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

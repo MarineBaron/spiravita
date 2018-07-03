@@ -5,10 +5,11 @@ dependencies: {  }
 name: full
 label: Full
 effects:
-  98c59b50-c8c5-481b-94cc-a16d54be2df5:
-    uuid: 98c59b50-c8c5-481b-94cc-a16d54be2df5
-    id: image_scale_and_crop
-    weight: 1
+  dfc12182-3fba-477e-af04-4fb2a4d05f9a:
+    uuid: dfc12182-3fba-477e-af04-4fb2a4d05f9a
+    id: image_scale
+    weight: 2
     data:
-      width: 1200
-      height: 800
+      width: 3000
+      height: 2000
+      upscale: true

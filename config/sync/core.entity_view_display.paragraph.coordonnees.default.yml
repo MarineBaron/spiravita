@@ -11,6 +11,7 @@ dependencies:
   module:
     - link
     - social_media_links_field
+    - telephone
 id: paragraph.coordonnees.default
 targetEntityType: paragraph
 bundle: coordonnees
@@ -18,37 +19,42 @@ mode: default
 content:
   field_email:
     weight: 0
-    label: above
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: email_mailto
     region: content
   field_facebook:
     weight: 4
-    label: above
+    label: visually_hidden
     settings:
-      appearance: {  }
-      link_attributes: {  }
+      appearance:
+        orientation: h
+        show_name: 0
+      link_attributes:
+        target: _blank
+        rel: '<none>'
     third_party_settings: {  }
     type: social_media_links_field_default
     region: content
   field_site_web:
     weight: 2
-    label: above
+    label: visually_hidden
     settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
     third_party_settings: {  }
     type: link
     region: content
   field_telephone:
     weight: 1
-    label: above
-    settings: {  }
+    label: visually_hidden
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
 hidden: {  }

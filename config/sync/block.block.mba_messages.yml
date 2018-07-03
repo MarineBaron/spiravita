@@ -1,0 +1,22 @@
+uuid: 7090f6d9-6f68-4f05-b5f3-1df9bd77df67
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mba
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: mba_messages
+theme: mba
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }

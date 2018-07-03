@@ -1,0 +1,23 @@
+uuid: ab926eaf-d7ef-44ad-8c28-df8b588052e2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mba
+id: mba_marquedusite
+theme: mba
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

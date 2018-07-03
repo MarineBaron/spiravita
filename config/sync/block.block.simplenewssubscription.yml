@@ -1,0 +1,30 @@
+uuid: 5c2d359e-a75d-46f9-aa51-f524f6f265a7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - simplenews
+    - system
+  theme:
+    - mba
+id: simplenewssubscription
+theme: mba
+region: bottom_3
+weight: -7
+provider: null
+plugin: simplenews_subscription_block
+settings:
+  id: simplenews_subscription_block
+  label: 'Simplenews subscription'
+  provider: simplenews
+  label_display: '0'
+  newsletters:
+    default: default
+  message: 'S''inscrire à notre newsletter'
+  unique_id: block_newsletter
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

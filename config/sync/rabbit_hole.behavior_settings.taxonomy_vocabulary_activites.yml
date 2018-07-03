@@ -1,0 +1,9 @@
+uuid: b55950e4-dae8-4e25-953e-88e52205a8d5
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_activites
+action: display_page
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301

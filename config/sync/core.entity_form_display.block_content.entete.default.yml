@@ -8,6 +8,7 @@ dependencies:
     - field.field.block_content.entete.field_image
     - field.field.block_content.entete.field_info
     - field.field.block_content.entete.field_logo
+    - field.field.block_content.entete.field_titre
     - image.style.thumbnail
   module:
     - image
@@ -55,6 +56,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_titre:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
     region: content
   info:
     type: string_textfield

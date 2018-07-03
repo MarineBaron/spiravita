@@ -5,4 +5,4 @@ dependencies: {  }
 id: heure_courte
 label: 'Heure Courte'
 locked: false
-pattern: 'h:i'
+pattern: 'H:i'

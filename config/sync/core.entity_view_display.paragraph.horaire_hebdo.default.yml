@@ -27,7 +27,7 @@ content:
     weight: 0
     label: visually_hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content

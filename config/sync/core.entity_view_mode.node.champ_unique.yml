@@ -1,0 +1,10 @@
+uuid: 7b76c247-6778-439f-91af-90875c686634
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.champ_unique
+label: 'Champ unique'
+targetEntityType: node
+cache: true

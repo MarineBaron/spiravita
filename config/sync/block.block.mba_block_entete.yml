@@ -1,0 +1,31 @@
+uuid: 2eaf16c2-48ab-4c0e-8002-72141d446ec0
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:entete:2cc8ae22-215d-4b5f-957e-ac9a281d15c4'
+  module:
+    - block_content
+    - system
+  theme:
+    - mba
+id: mba_block_entete
+theme: mba
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:2cc8ae22-215d-4b5f-957e-ac9a281d15c4'
+settings:
+  id: 'block_content:2cc8ae22-215d-4b5f-957e-ac9a281d15c4'
+  label: 'Bien-être du corps et de l''esprit'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

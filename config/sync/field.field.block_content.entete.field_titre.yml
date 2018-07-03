@@ -1,0 +1,21 @@
+uuid: bf6ebfc7-a745-4590-8891-2d95f25310b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.entete
+    - field.storage.block_content.field_titre
+  module:
+    - text
+id: block_content.entete.field_titre
+field_name: field_titre
+entity_type: block_content
+bundle: entete
+label: Titre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

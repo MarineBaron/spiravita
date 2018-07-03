@@ -1,0 +1,38 @@
+uuid: bb37ce4a-3157-40b4-bb77-332341f988ca
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.coordonnees
+    - field.storage.block_content.field_logo
+  module:
+    - image
+id: block_content.coordonnees.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: coordonnees
+label: Logo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images/logo
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 74c9d819-0dc8-42be-8c95-caf353997e40
+    alt: Spiravita
+    title: Spiravita
+    width: 1050
+    height: 400
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

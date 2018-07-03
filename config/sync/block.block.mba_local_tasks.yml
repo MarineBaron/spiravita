@@ -1,0 +1,22 @@
+uuid: 6faac876-8e7b-42a5-8500-634a3a306896
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - mba
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: mba_local_tasks
+theme: mba
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

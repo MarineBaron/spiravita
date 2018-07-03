@@ -12,6 +12,7 @@ dependencies:
     - paragraphs
     - taxonomy
     - user
+    - views_bootstrap
 id: cours
 label: Cours
 module: views
@@ -58,11 +59,17 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: false
+          default_row_class: true
+          alignment: horizontal
+          columns: '4'
+          col_xs: col-xs-12
+          col_sm: col-sm-12
+          col_md: col-md-3
+          col_lg: col-lg-3
       row:
         type: fields
       fields:
@@ -229,6 +236,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -322,10 +332,13 @@ display:
         - 'config:core.entity_view_display.node.atelier.teaser'
         - 'config:core.entity_view_display.node.cours.default'
         - 'config:core.entity_view_display.node.cours.teaser'
+        - 'config:core.entity_view_display.node.intervenant.champ_unique'
         - 'config:core.entity_view_display.node.intervenant.default'
         - 'config:core.entity_view_display.node.intervenant.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.responsive_slideshow.default'
+        - 'config:core.entity_view_display.node.responsive_slideshow.teaser'
         - 'config:field.storage.paragraph.field_horaire'
   block_1:
     display_plugin: block
@@ -335,6 +348,7 @@ display:
     display_options:
       display_extenders: {  }
       block_description: 'Nos cours'
+      enabled: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -350,8 +364,11 @@ display:
         - 'config:core.entity_view_display.node.atelier.teaser'
         - 'config:core.entity_view_display.node.cours.default'
         - 'config:core.entity_view_display.node.cours.teaser'
+        - 'config:core.entity_view_display.node.intervenant.champ_unique'
         - 'config:core.entity_view_display.node.intervenant.default'
         - 'config:core.entity_view_display.node.intervenant.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.responsive_slideshow.default'
+        - 'config:core.entity_view_display.node.responsive_slideshow.teaser'
         - 'config:field.storage.paragraph.field_horaire'

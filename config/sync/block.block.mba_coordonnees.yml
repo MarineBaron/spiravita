@@ -1,0 +1,25 @@
+uuid: e547d28d-0664-42fa-967d-c3ae6336457b
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:coordonnees:17784cbe-9096-40fb-a5ea-192259b76356'
+  module:
+    - block_content
+  theme:
+    - mba
+id: mba_coordonnees
+theme: mba
+region: bottom_2
+weight: -7
+provider: null
+plugin: 'block_content:17784cbe-9096-40fb-a5ea-192259b76356'
+settings:
+  id: 'block_content:17784cbe-9096-40fb-a5ea-192259b76356'
+  label: Coordonnées
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 31506522-a90c-4609-943e-28730f94531d
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_niveau
+action: page_redirect
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301

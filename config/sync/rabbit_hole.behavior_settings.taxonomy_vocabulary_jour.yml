@@ -1,0 +1,9 @@
+uuid: 4f5d461e-e5e7-481b-8b22-b08b1ae21f5c
+langcode: fr
+status: true
+dependencies: {  }
+id: taxonomy_vocabulary_jour
+action: page_redirect
+allow_override: 1
+redirect: '[site:url]'
+redirect_code: 301

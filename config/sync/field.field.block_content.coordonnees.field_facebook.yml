@@ -1,0 +1,147 @@
+uuid: b823cb0e-75c7-4f8e-86ee-14cc748e492a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.coordonnees
+    - field.storage.block_content.field_facebook
+  module:
+    - social_media_links_field
+id: block_content.coordonnees.field_facebook
+field_name: field_facebook
+entity_type: block_content
+bundle: coordonnees
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    platform: null
+    value: null
+    platform_values:
+      flickr:
+        value: ''
+      tumblr:
+        value: ''
+      behance:
+        value: ''
+      instagram:
+        value: ''
+      bitbucket:
+        value: ''
+      facebook:
+        value: Spiravita-1343834182342814/
+      drupal:
+        value: ''
+      vkontakte:
+        value: ''
+      slideshare:
+        value: ''
+      github:
+        value: ''
+      linkedin:
+        value: ''
+      email:
+        value: ''
+      youtube:
+        value: ''
+      pinterest:
+        value: ''
+      rss:
+        value: ''
+      contact:
+        value: ''
+      twitter:
+        value: ''
+      vimeo:
+        value: ''
+      youtube_channel:
+        value: ''
+      googleplus:
+        value: ''
+default_value_callback: ''
+settings:
+  iconset: 'fontawesome:2x'
+  platforms:
+    flickr:
+      description: ''
+      weight: '-10'
+      enabled: 0
+    linkedin:
+      description: ''
+      weight: '-9'
+      enabled: 0
+    youtube_channel:
+      description: ''
+      weight: '-8'
+      enabled: 0
+    vimeo:
+      description: ''
+      weight: '-7'
+      enabled: 0
+    twitter:
+      description: ''
+      weight: '-6'
+      enabled: 0
+    contact:
+      description: ''
+      weight: '-5'
+      enabled: 0
+    rss:
+      description: ''
+      weight: '-4'
+      enabled: 0
+    pinterest:
+      description: ''
+      weight: '-3'
+      enabled: 0
+    youtube:
+      description: ''
+      weight: '-2'
+      enabled: 0
+    email:
+      description: ''
+      weight: '-1'
+      enabled: 0
+    github:
+      description: ''
+      weight: '0'
+      enabled: 0
+    tumblr:
+      description: ''
+      weight: '1'
+      enabled: 0
+    slideshare:
+      description: ''
+      weight: '2'
+      enabled: 0
+    vkontakte:
+      description: ''
+      weight: '3'
+      enabled: 0
+    drupal:
+      description: ''
+      weight: '4'
+      enabled: 0
+    facebook:
+      enabled: '1'
+      description: ''
+      weight: '5'
+    bitbucket:
+      description: ''
+      weight: '6'
+      enabled: 0
+    instagram:
+      description: ''
+      weight: '7'
+      enabled: 0
+    behance:
+      description: ''
+      weight: '8'
+      enabled: 0
+    googleplus:
+      description: ''
+      weight: '9'
+      enabled: 0
+field_type: social_media_links_field

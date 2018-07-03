@@ -1,0 +1,31 @@
+uuid: d6be5a08-e52e-4366-9fde-19c5117c472b
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:location:ea55d5ed-4f11-4832-97a7-70b1f8fd754c'
+  module:
+    - block_content
+    - system
+  theme:
+    - mba
+id: mba_block_location
+theme: mba
+region: content
+weight: 2
+provider: null
+plugin: 'block_content:ea55d5ed-4f11-4832-97a7-70b1f8fd754c'
+settings:
+  id: 'block_content:ea55d5ed-4f11-4832-97a7-70b1f8fd754c'
+  label: 'Location d''une salle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

@@ -6,10 +6,11 @@ _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Utilisateur anonyme'
-weight: 0
+weight: -10
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
+  - 'subscribe to newsletters'
+  - 'view empty pages'

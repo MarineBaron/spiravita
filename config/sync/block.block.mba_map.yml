@@ -1,0 +1,25 @@
+uuid: 8d1002ad-e40a-481c-8f96-ba28f95db8f6
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:map:be98291e-241b-4f27-bbf6-a2c7fffe40b7'
+  module:
+    - block_content
+  theme:
+    - mba
+id: mba_map
+theme: mba
+region: bottom_1
+weight: -7
+provider: null
+plugin: 'block_content:be98291e-241b-4f27-bbf6-a2c7fffe40b7'
+settings:
+  id: 'block_content:be98291e-241b-4f27-bbf6-a2c7fffe40b7'
+  label: Map
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

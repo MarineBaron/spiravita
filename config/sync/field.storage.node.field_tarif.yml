@@ -1,0 +1,20 @@
+uuid: 5bba6a8b-9891-4a7e-8708-aac36ca6a3b7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_tarif
+field_name: field_tarif
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

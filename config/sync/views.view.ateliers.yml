@@ -11,6 +11,7 @@ dependencies:
     - paragraphs
     - taxonomy
     - user
+    - views_bootstrap
 id: ateliers
 label: Ateliers
 module: views
@@ -57,11 +58,17 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: views_bootstrap_grid
         options:
           grouping: {  }
           row_class: ''
           default_row_class: false
+          alignment: horizontal
+          columns: '4'
+          col_xs: col-xs-12
+          col_sm: col-sm-6
+          col_md: col-md-3
+          col_lg: col-lg-3
       row:
         type: fields
       fields:
@@ -194,6 +201,9 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -265,10 +275,13 @@ display:
         - 'config:core.entity_view_display.node.atelier.teaser'
         - 'config:core.entity_view_display.node.cours.default'
         - 'config:core.entity_view_display.node.cours.teaser'
+        - 'config:core.entity_view_display.node.intervenant.champ_unique'
         - 'config:core.entity_view_display.node.intervenant.default'
         - 'config:core.entity_view_display.node.intervenant.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.responsive_slideshow.default'
+        - 'config:core.entity_view_display.node.responsive_slideshow.teaser'
   block_1:
     display_plugin: block
     id: block_1
@@ -291,7 +304,10 @@ display:
         - 'config:core.entity_view_display.node.atelier.teaser'
         - 'config:core.entity_view_display.node.cours.default'
         - 'config:core.entity_view_display.node.cours.teaser'
+        - 'config:core.entity_view_display.node.intervenant.champ_unique'
         - 'config:core.entity_view_display.node.intervenant.default'
         - 'config:core.entity_view_display.node.intervenant.teaser'
         - 'config:core.entity_view_display.node.page.default'
         - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.responsive_slideshow.default'
+        - 'config:core.entity_view_display.node.responsive_slideshow.teaser'

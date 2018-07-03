@@ -1,0 +1,8 @@
+uuid: 564f5da0-5227-4e0f-92db-9c945967b771
+langcode: fr
+status: true
+dependencies: {  }
+id: coordonnees
+label: Coordonnées
+revision: 0
+description: 'Fournit les coordonnées de Spiravita'

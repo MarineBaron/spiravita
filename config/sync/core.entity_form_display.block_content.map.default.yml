@@ -1,0 +1,31 @@
+uuid: 9e846972-1fdd-4345-ac12-615818d673a1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.map
+    - field.field.block_content.map.field_map
+  module:
+    - geofield
+id: block_content.map.default
+targetEntityType: block_content
+bundle: map
+mode: default
+content:
+  field_map:
+    weight: 1
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

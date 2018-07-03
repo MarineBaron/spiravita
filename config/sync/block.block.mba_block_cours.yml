@@ -1,0 +1,30 @@
+uuid: 2d057fac-cf95-4249-94f8-3751a5684811
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.cours
+  module:
+    - system
+    - views
+  theme:
+    - mba
+id: mba_block_cours
+theme: mba
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cours-block_1'
+settings:
+  id: 'views_block:cours-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /accueil
+    negate: false
+    context_mapping: {  }

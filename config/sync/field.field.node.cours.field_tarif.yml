@@ -1,0 +1,21 @@
+uuid: 06601a0e-a922-4262-8f50-911041f51a3e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tarif
+    - node.type.cours
+  module:
+    - text
+id: node.cours.field_tarif
+field_name: field_tarif
+entity_type: node
+bundle: cours
+label: Tarif
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.cours.field_intervenant
     - field.field.node.cours.field_public
     - field.field.node.cours.field_reservation
+    - field.field.node.cours.field_tarif
     - image.style.thumbnail
     - node.type.cours
   module:
@@ -23,7 +24,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     settings:
       rows: 9
       summary_rows: 3
@@ -52,7 +53,7 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 7
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -84,9 +85,17 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_tarif:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true

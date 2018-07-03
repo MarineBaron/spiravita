@@ -1,0 +1,14 @@
+uuid: 9d1d2bcf-f53a-4449-becb-8c3483590fd6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.webmaster
+  module:
+    - user
+id: user_add_role_action.webmaster
+label: 'Ajouter le rôle webmaster aux utilisateurs sélectionnés'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: webmaster

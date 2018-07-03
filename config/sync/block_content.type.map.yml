@@ -1,0 +1,8 @@
+uuid: 367b9588-df83-41b7-a4dd-59fa1edfcc0c
+langcode: fr
+status: true
+dependencies: {  }
+id: map
+label: Map
+revision: 0
+description: 'Carte vers Spiravita'
