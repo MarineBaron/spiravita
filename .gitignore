@@ -8,7 +8,7 @@
 /web/libraries/
 
 # Ignore private files
-/private/*
+/private/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
